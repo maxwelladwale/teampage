@@ -36,8 +36,10 @@
 
 .jtp-cards{
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(5, 1fr);  }
+    grid-template-columns: repeat(4, 25%);
+    grid-column-gap: 10px;
+}
+
 .jtp-stats{
     width: 300px;
     height: auto;
