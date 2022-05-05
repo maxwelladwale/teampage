@@ -1,0 +1,239 @@
+.jtp-welcome{
+    background-color: #BF1E2E;
+    max-width:inherit !important;
+}
+.jtp-welcome h3{
+    font-family:'poppins', sans-serif;
+    font-weight: 500;
+    justify-content: center;
+    display: flex;
+    padding:1em;
+    color: white;
+
+}
+.jtp-welcome-inner-info{
+    background-color: #F9F9F8;
+}
+
+.jtp-welcome-jumbo{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.jtp-welcome-inner-jumbo ul{
+    display: flex ;
+    justify-content: center;
+    list-style: none;
+}
+
+.jtp-welcome-inner-jumbo ul li{
+    padding: 20px;
+    font-family: "poppins";
+}
+
+.jtp-cards{
+    display: flex;
+    justify-content: center;
+}
+.jtp-stats{
+    width: 300px;
+    height: auto;
+    box-shadow: 0px 12px 23px 0px rgb(189 162 92 / 4%);
+    margin: 2em;
+    text-align: center;
+    /* border: 1px solid rgba(0, 0, 0, 0.125); */
+    animation-duration: 1s;
+    animation-name: teamanimation;
+    transition: all 1s ease-in 0s;
+}
+
+@keyframes teamanimation {
+    0% {
+        width: 0;
+    }
+
+}
+
+.jtp-image{
+    border-radius:50%;
+    width: 215px;
+    margin-top: 20px;
+    background-image: url('../img/team-1-1.jpg');
+    background-size: cover;
+    height:215px;
+    border: #bf1e2e 5px solid;
+}
+
+.jtp-image-booked{
+    border-radius:50%;
+    width: 215px;
+    margin-top: 20px;
+    background-image: url('../img/team-1-1.jpg');
+    background-size: cover;
+    height:215px;
+    border: #9b9b9b 5px solid;
+    filter: sepia();
+    display: flex;
+    justify-content: center;
+}
+
+.jtp-image-booked p{
+    color: red;
+    font-size: xx-large;
+    padding-top: 50px;
+}
+
+.jtp-stat-name{
+    display: grid;
+    justify-content: center;
+    background-color: #FFFFFF;
+    font-family:'poppins', sans-serif;
+
+}
+.jtp-stats-details{
+    background-color: #FFFFFF;
+    display: grid;
+    justify-content: center;
+}
+.jtp-stats-details span{
+   display: flex;
+   justify-content:center;
+    font-size:small;
+    font-family:'poppins', sans-serif;
+    margin: 01em;
+}
+
+.jtp-stats-details button{
+    background-color: #BF1E2E;
+    color: white;
+    padding-top: 0.938rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.938rem;
+    padding-left: 1.5rem;
+    border:none;
+    margin: 1em;
+    font-family: "SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace";
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.jtp-stats-details button:hover{
+    background-color: black;
+}
+
+.strip{
+    height: 4px;
+    overflow: hidden;
+}
+.strip-inner{
+    animation-duration: 5s;
+    animation-name: myanimation;
+    transition: all 5s ease 0s;
+    width: 100%;
+    height: 4px;
+    background-color: #BF1E2E;
+}
+@keyframes myanimation {
+    0% {
+        width: 0;
+    }
+}
+
+@keyframes myanimation {
+    0% {
+        width: 0;
+        
+    }
+}
+
+@media screen (271px) {
+    
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 69px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top : 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+.switch input {
+    display: none;
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 35px;
+    left: 0px;
+    bottom: 5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50px;
+    top: -3px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+}
+
+input:checked + .slider{
+    background-color: #ff278c;
+}
+
+input:checked + .slider:before{
+    transform: translateX(50px) ;
+    left: -15px;
+
+}
+.single-select .option-team{
+    display: block;
+    position: relative;
+
+}
+.single-select .option-team .checkbox{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.option-team .option-inner{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 58px 40px;
+    cursor: pointer;
+    color: #585c68;
+    display: block;
+    border: 5px solid transparent;
+    position: relative;
+}
+.option-team .option-inner .icon {
+    margin-bottom: 10px;
+}
+.option-team .checkbox:checked ~ .option_inner.temp1 {
+    border-color: #3b5999;
+    color: #3b5999;
+  }
+
+  
